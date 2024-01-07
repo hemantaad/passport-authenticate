@@ -1,0 +1,4 @@
+{
+  "jwt": "JWT_SECRET",
+  "mongoUrl": "MONGODB_URL"
+}
