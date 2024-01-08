@@ -10,7 +10,6 @@ const createUser = {
     role: Joi.string()
       .valid(...USERROLE.ENUM)
       .default("user"),
-    creationDate: Joi.date(),
   }),
 };
 

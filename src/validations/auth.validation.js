@@ -1,0 +1,10 @@
+const Joi = require("joi");
+
+const login = {
+  body: Joi.object({
+    username: Joi.string().required(),
+    password: Joi.string().required(),
+  }),
+};
+
+module.exports = { login };

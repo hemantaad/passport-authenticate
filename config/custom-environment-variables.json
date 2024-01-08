@@ -1,4 +1,5 @@
 {
   "jwt": "JWT_SECRET",
-  "mongoUrl": "MONGODB_URL"
+  "mongoUrl": "MONGODB_URL",
+  "session": "SESSION_SECRET"
 }
