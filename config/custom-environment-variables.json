@@ -1,4 +1,6 @@
 {
   "jwt": "JWT_SECRET",
-  "mongoUrl": "MONGODB_URL"
+  "mongoUrl": "MONGODB_URL",
+  "smptUsername": "SMPT_USERNAME",
+  "smptPassword": "SMPT_PASSWORD"
 }

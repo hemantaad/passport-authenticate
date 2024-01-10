@@ -1,0 +1,17 @@
+extends emailLayout.pug
+
+block content
+  p Thank you for signing up! Please verify your email address by clicking the button below:
+
+  // Include the link.pug file for the email verification button
+  include link.pug
+
+  // Additional content
+  p If the button above doesn't work, you can also copy and paste the following URL into your browser:
+  p #{linkText}
+
+  p This email will expire in 24 hours. If you didn't sign up for an account, please ignore this email.
+
+  // Signature or additional information
+  p Regards,
+  p Insightful Consultation

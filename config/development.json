@@ -1,5 +1,6 @@
 {
   "port": "5000",
   "jwtAccessExpirationMinutes": 30,
-  "jwtRefreshExpirationDays": 30
+  "jwtRefreshExpirationDays": 30,
+  "webURL": "http://localhost:5000"
 }
