@@ -42,8 +42,6 @@ class Email {
       linkText: `${webURL}/verify-email?email=${this.to}`,
       buttonText: "Verify email",
     };
-    console.log(webURL, "webURL");
-    console.log(`${config.get("webURL")}/verify-email?email=${this.to}`);
     await this.prepareSend("verification-email", "Email verification", content);
   }
 }

@@ -10,6 +10,10 @@ const userSchema = new Schema(
     password: { type: String, required: true },
     name: { type: String },
     role: { type: String, enum: USERROLE.ENUM, default: "user" },
+    isEmailVerified: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
