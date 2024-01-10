@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const { USERROLE } = require("../config/enums");
 
-const createUser = {
+const register = {
   body: Joi.object({
     username: Joi.string().required(),
     email: Joi.string().email().required(),
@@ -13,4 +13,17 @@ const createUser = {
   }),
 };
 
-module.exports = { createUser };
+const login = {
+  body: Joi.object({
+    email: Joi.string().email().required(),
+    password: Joi.string().required(),
+  }),
+};
+
+const refreshToken = {
+  body: Joi.object({
+    refreshToken: Joi.string().required(),
+  }),
+};
+
+module.exports = { login, register, refreshToken };

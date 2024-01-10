@@ -1,16 +1,19 @@
-const path = require("path");
+const _ = require("lodash");
 const catchAsync = require("../utils/catchAsync");
+const { User } = require("../models");
+const { userService } = require("../services");
 
-const createUser = catchAsync(async (req, res) => {
-  console.log("jdahdjas");
-  res.send("User created successfully.");
+const getUsers = catchAsync(async (req, res) => {
+  const user = await User.find();
+  res.send(user);
 });
 
-const registerUser = catchAsync(async (req, res) => {
-  res.sendFile(path.join(__dirname, "../../public/register.html"));
+const createUser = catchAsync(async (req, res) => {
+  const user = await userService.createUser(req.body);
+  res.send(user);
 });
 
 module.exports = {
   createUser,
-  registerUser,
+  getUsers,
 };
