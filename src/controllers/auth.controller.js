@@ -1,9 +1,11 @@
 const catchAsync = require("../utils/catchAsync");
 const { authService, tokenService, userService } = require("../services");
+const { Email } = require("../services/email.service");
 
 const register = catchAsync(async (req, res) => {
   const user = await userService.createUser(req.body);
   const tokens = await tokenService.generateAuthTokens(user);
+  await new Email(user.email).sendVerificationEmail();
   res.send({ user, tokens });
 });
 
