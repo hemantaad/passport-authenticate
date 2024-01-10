@@ -29,7 +29,24 @@ const refreshAuth = async (refreshToken) => {
   }
 };
 
+const verifyEmail = async (email) => {
+  try {
+    const user = await userService.getUserByEmail(email);
+    if (!user) {
+      throw new Error();
+    }
+    if (user.email !== email) {
+      throw new Error("Verification failed.");
+    }
+    Object.assign(user, { isEmailVerified: true });
+    user.save();
+  } catch (error) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, error);
+  }
+};
+
 module.exports = {
   loginUserWithEmailAndPassword,
   refreshAuth,
+  verifyEmail,
 };
