@@ -1,6 +1,6 @@
 # Passport JWT Authentication
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Node.js](https://img.shields.io/badge/node-v14.17.6-green.svg)](https://nodejs.org/) [![Express.js](https://img.shields.io/badge/express-v4.17.1-blue.svg)](https://expressjs.com/) [![MongoDB](https://img.shields.io/badge/mongodb-v4.4.0-green.svg)](https://www.mongodb.com/) [![Passport](https://img.shields.io/badge/passport-v0.4.1-blue.svg)](http://www.passportjs.org/)
+[![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE) [![Node.js](https://img.shields.io/badge/node-v20.10.0-green.svg)](https://nodejs.org/) [![Express.js](https://img.shields.io/badge/express-v4.18.2-blue.svg)](https://expressjs.com/) [![MongoDB](https://img.shields.io/badge/mongodb-v4.4.0-green.svg)](https://www.mongodb.com/) [![Passport](https://img.shields.io/badge/passport-v0.7.0-blue.svg)](http://www.passportjs.org/)
 
 ## Getting Started
 
